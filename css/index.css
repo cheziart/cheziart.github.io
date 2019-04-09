@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 900;
+    color: white;
+}
+/*Убираем ненужное*/
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/*head*/
+header {
+    background: linear-gradient(to right, #09052f, #311d5e), url("../images/background_header.jpg");
+    background-blend-mode: hard-light; /*Управляет режимами наложения слоев фона*/
+    background-size: cover; /*Размещает картинку на весь блок*/
+    padding-top: 34px;
+    padding-bottom: 70px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 180px;
+}
+
+.navigation_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-left: 280px;
+}
+
+.navigation_ul > li {
+    padding-right: 20px;
+}
+
+.navigation_ul > li > a {
+    color: white;
+}
+
+.navigation_ul li.active a,
+.navigation_ul li a:hover {
+    color: #00e0d0;
+}
+/*main*/
+.main {
+    text-align: center;
+}
+
+.main_heading {
+    font-family: "Playfair Display", Arial, sans-serif;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+hr {
+    margin: 22px auto 26px auto;
+    width: 50px;
+    height: 1px;
+    background-color: #00e0d0;
+    border: none;
+}
+
+.main_paragraph {
+    width: 51%;
+    margin: 0 24.5%;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.button {
+    margin-top: 50px;
+    margin-bottom: 122px;
+    padding: 10px 12px;
+    border: 1px solid #00e0d0;
+    background: none;
+    border-radius: 1px;
+    color: #00e0d0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Hammersmith One", sans-serif;
+}
+
+.button a {
+    color: #00e0d0;
+}
+/*circle*/
+.circlecont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #bab9bc;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+/*?????????? в процесі роботи*/
+header:hover .circlehover1 {
+    border: 1px solid #00e0d0;
+    background: #00e0d0;
+}
+
+/*Section about*/
+#about {
+    width: 60%;
+    margin: 68px 20%;
+    font-weight: 100;
+    font-size: 14px;
+    color: #9e9da2;
+}
+
+.aboutlogo {
+    width: 28%;
+    float: left;
+}
+
+.abouttext {
+    margin-left: 28%;
+    padding-left: 90px;
+}
+
+.about_heading {
+    font-family: "Playfair Display", Arial, sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #413d4b;
+}
+
+.abouttext p {
+    padding-top: 29px;
+    line-height: 22px;
+}
+
+.buttoncont {
+    text-align: center;
+    clear: both;
+}
+
+/*media header*/
+@media all and (max-width: 950px) {
+    .navigation_ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8vw;
+        text-transform: uppercase;
+        margin-left: 8vw;
+    }
+
+    .navigation {
+        margin-bottom: 18vw;
+    }
+
+    .navigation_ul > li {
+        padding-right: 10px;
+    }
+
+    .button {
+        margin-top: 5vw;
+        margin-bottom: 12vw;
+    }
+
+    .logotype {
+        max-width: 20%;
+        margin-left: 2vw;
+    }
+
+    .aboutlogomedia {
+        max-width: 100%;
+    }
+
+    .abouttext {
+        margin-left: 28%;
+        width: 72%;
+        padding-left: 20px;
+    }
+
+}
